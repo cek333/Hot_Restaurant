@@ -6,7 +6,7 @@ const fs = require("fs");
 const app = express();
 const saveFileName = "tablelist.json";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // enabling CORS
 app.use(cors());
